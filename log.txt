@@ -33,3 +33,10 @@ SO, tentative plan to start playing around:
 - shiny, ice cream buffet-themed web frontend
 
 TODO: AI as applied to binary reverse engineering? (and RE in general? +vision)
+
+Actually, this might be fun to try doing entirely with AI. Model/prompt/response log? Agentic backend? Self-checking/verifying? Global narrative/summaries/etc?
+
+Frontend: maybe also suggest existing OSes from supplied, desired caps/props?
+Collab: also suggest open tasks in manual work, like analyzing hardware drivers etc, direct users to other related projects
+
+TODO: any hardware hacking projects of personal interest, try to integrate here (ex. tablet/phone/raspi stuff)
