@@ -1,0 +1,35 @@
+2025.09.07
+TODO: hardware modeling? (for compilers and also higher-level considerations)
+TODO: Has anybody used AI to make an assembler from a datasheet/manual?
+TODO: system capability & property modeling?
+TODO: Formal stuff?
+
+OR "just do things", as the kids say
+
+Probably a good idea to pick an easy target architecture and system goals:
+- kind of want x86 because somewhat familiar, and ubiquitous (at least for desktops/laptops, which is where I imagine this would be most toyed with at first (certainly where I'd work))
+  - but that gets hairy fast...
+    - could target 386? and then add stuff later on
+      - who am I kidding, this is going to be living in an emulator for a while
+        - that sounds like a challenge...
+
+TODO: research fuzzing, as it relates to discovering functionality (and defects/vulns) of hardware
+
+looking ahead: would be cool for system to be capable of autonomously integrating new functionality as it is either discovered or suggested
+
+TODO: language(s)? should have choice
+
+Will most of this be config? And algorithms.
+
+Man, I love thinking about a project, then searching the Internet about it and finding people doing cool stuff. I love you all.
+
+SO, tentative plan to start playing around:
+- spec/capability/generator/narrative (i.e. everything) database
+- machine spec
+- capability spec??
+- generator algos
+- glue scripts/code to dispatch to compilers and whatnot
+- ??
+- shiny, ice cream buffet-themed web frontend
+
+TODO: AI as applied to binary reverse engineering? (and RE in general? +vision)
