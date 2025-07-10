@@ -1,8 +1,8 @@
 2025.09.07
-TODO: hardware modeling? (for compilers and also higher-level considerations)
-TODO: Has anybody used AI to make an assembler from a datasheet/manual?
-TODO: system capability & property modeling?
-TODO: Formal stuff?
+TODO.1: hardware modeling? (for compilers and also higher-level considerations)
+TODO.2: Has anybody used AI to make an assembler from a datasheet/manual?
+TODO.3: system capability & property modeling?
+TODO.4: Formal stuff?
 
 OR "just do things", as the kids say
 
@@ -13,11 +13,11 @@ Probably a good idea to pick an easy target architecture and system goals:
       - who am I kidding, this is going to be living in an emulator for a while
         - that sounds like a challenge...
 
-TODO: research fuzzing, as it relates to discovering functionality (and defects/vulns) of hardware
+TODO.5: research fuzzing, as it relates to discovering functionality (and defects/vulns) of hardware
 
 looking ahead: would be cool for system to be capable of autonomously integrating new functionality as it is either discovered or suggested
 
-TODO: language(s)? should have choice
+TODO.6: language(s)? should have choice
 
 Will most of this be config? And algorithms.
 
@@ -32,11 +32,36 @@ SO, tentative plan to start playing around:
 - ??
 - shiny, ice cream buffet-themed web frontend
 
-TODO: AI as applied to binary reverse engineering? (and RE in general? +vision)
+TODO.7: AI as applied to binary reverse engineering? (and RE in general? +vision)
 
 Actually, this might be fun to try doing entirely with AI. Model/prompt/response log? Agentic backend? Self-checking/verifying? Global narrative/summaries/etc?
 
 Frontend: maybe also suggest existing OSes from supplied, desired caps/props?
 Collab: also suggest open tasks in manual work, like analyzing hardware drivers etc, direct users to other related projects
 
-TODO: any hardware hacking projects of personal interest, try to integrate here (ex. tablet/phone/raspi stuff)
+TODO.8: any hardware hacking projects of personal interest, try to integrate here (ex. tablet/phone/raspi stuff)
+
+
+2025.07.10
+Thinkings on specs and such:
+quantities: time (absolute and relative (ex. cycles)), energy?
+objects: what properties? ex memory stores collections of binary bits - probably too early to be thinking of qbits or pbits
+operations: ?? (how thorough does this need to be? what already exists that i can use? high level logic, actual hw logic (if known), timing/energy considerations, etc. various possible decompositions?)
+
+milestones:
+- specs to code ("hello world" is fine)
+- specs to code x2 (different implementation languages and architectures)
+- spec to driver (towards OS-y parts)
+- spec to library (towards OS-y systems)
+- spec to kernel (system of systems)
+- spec to OS (kernel + core libs)
+- generation + narrative (even if not using AI - human-readable log of what is produced and how, and how it is all intended to be installed/used)
+- It Works - for a single arch (in other words: spec to complete (if minimal) system)
+- It Works (x2) - different archs/devices
+- It Works on the web
+- It Works (and is pretty) on the web
+- It Works for other people on the web
+- ???
+- pull all compiler and code gen tricks into one grand unified blob
+
+So by "spec" I guess I'm thinking in terms of declarative languages, at least as far as functionality and not just definitions go
