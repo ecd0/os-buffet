@@ -65,3 +65,25 @@ milestones:
 - pull all compiler and code gen tricks into one grand unified blob
 
 So by "spec" I guess I'm thinking in terms of declarative languages, at least as far as functionality and not just definitions go
+
+
+2025.07.11
+And on the third day, we actually do something...
+
+Don't want to jump into the code gen rabbit hole yet so what's an easy way to get started?
+Seems like the Supreme Compleat realization is a self-modifying toolchain generator.
+
+For milestone 3 (spec to driver), what's the difference between what I want and a compiler?
+- DON'T want to have to manually write low-level code (but want the option to inspect/alter)
+- DO want to supply machine (cpu) spec, device specs, and constraints and it Just Makes Something that Just Works
+
+As far the whole system goes, I imagine generating a "first pass" from very high level stuff and then tweaking:
+spec -> implementation <-> verification <-> refinement
+
+Tend to build the tower of software ever higher - don't want a tower, want sea of interactive (but stable) information
+
+I guess a practical application of this would be frustrating malware (randomize interfaces/implementations), but that also wouldn't be necessary if it was all done right the first time, right?
+
+Also cool: automatic benchmarking of generated stuff against nearest similar existing project(s)
+
+So I guess we'll need tool specs too. Any AI that can discover usage of command line tools? ex understand help text, examine outputs/results methodically, or even examine the binary directly (see TODO.7)
